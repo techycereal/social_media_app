@@ -8,17 +8,7 @@ function PostForm() {
   const [username, setUsername] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    await fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"  // Inform server we're sending JSON
-      },
-      body: JSON.stringify({ username, content, createdAt: new Date() }),
-    });
-    setContent('');
-    setUsername('');
-    window.location.reload()
+    
   };
 
   return (
