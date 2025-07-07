@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CiEdit } from "react-icons/ci";
 import { MdDelete } from "react-icons/md";
 
-const API_URL = 'https://685699e41789e182b37e8806.mockapi.io/api/v1/posts';
+const API_URL = 'https://API.mockapi.io/api/v1/posts';
 
 function PostItem({ post, onDelete, onUpdate }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
