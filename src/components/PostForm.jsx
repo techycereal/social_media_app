@@ -1,7 +1,7 @@
 // components/PostForm.jsx
 import React, { useState } from 'react';
 
-const API_URL = 'https://685699e41789e182b37e8806.mockapi.io/api/v1/posts';
+const API_URL = 'https://API.mockapi.io/api/v1/posts';
 
 function PostForm() {
   const [content, setContent] = useState('');
