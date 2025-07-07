@@ -18,13 +18,7 @@ function PostItem({ post, onDelete, onUpdate }) {
   };
 
   const handleUpdate = async () => {
-    await fetch(`${API_URL}/${post.id}`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content }),
-    });
-    closeModal();
-    onUpdate();
+    
   };
 
   return (
